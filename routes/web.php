@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/tes', function () {
+//use Illuminate\Routing\Route;
+
+Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/soal_index','SoalController@index');
+
+Route::get('/input','AingController@input');
+
+Route::post('/proses','AingController@proses');

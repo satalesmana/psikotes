@@ -13,7 +13,7 @@ class Createsoal extends Migration
      */
     public function up()
     {
-        Schema::create('soal', function (Blueprint $table){
+        Schema::create('soals', function (Blueprint $table){
             $table->bigIncrements('id');
             $table->integer('kategoriid');
             $table->longText('soal'); 
