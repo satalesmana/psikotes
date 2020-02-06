@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/tes', function () {
+//use Illuminate\Routing\Route;
+
+Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/input','JawabanController@input');
+Route::post('/proses','JawabanController@proses');
+
+Route::get('/testing', 'TestingController@index');
