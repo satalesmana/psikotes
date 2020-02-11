@@ -11,9 +11,4 @@
 |
 */
 
-Route::get('/tes', function () {
-    return view('welcome');
-});
-
-Route::get('/biodata', 'BiodataController@index')->name('biodata');
-Route::post('/biodata', 'BiodataController@store')->name('biodata.proses');
+Route::get('/', 'HomeController@index')->name('home');
