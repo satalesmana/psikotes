@@ -7,7 +7,7 @@
 </template>
 <script>
 
-import CompayPartnerForm from '../componets/companypartner/RegistrationForm'
+import CompayPartnerForm from '../components/companypartner/RegistrationForm'
 export default {
     components : {CompayPartnerForm },
     

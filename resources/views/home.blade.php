@@ -13,8 +13,14 @@
         <strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        @csrf
+    </form>
+
     <script>
-        const BASE_APP = '{{env('APP_PATH', '/')}}';
+        const APP_PATH = '{{url("/")}}';
+        const APP_TOKEN = '{!! csrf_token() !!}';
     </script>
     
     <script src="{{ asset('js/app.js') }}"></script>

@@ -11,19 +11,36 @@
   },
   "devDependencies": {
     "axios": "^0.19",
+    "bootstrap": "^4.0.0",
     "cross-env": "^5.1",
+    "jquery": "^3.2",
     "laravel-mix": "^5.0.1",
     "lodash": "^4.17.13",
+    "popper.js": "^1.12",
     "resolve-url-loader": "^2.3.1",
-    "sass": "^1.15.2",
-    "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "sass": "^1.20.1",
+    "sass-loader": "7.*",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
     "@coreui/coreui": "^3.0.0-beta.4",
     "@coreui/icons": "^1.0.0",
     "@coreui/utils": "^1.0.0",
     "@coreui/vue": "^3.0.0-beta.4",
-    "@coreui/vue-chartjs": "^1.0.2"
+    "@coreui/vue-chartjs": "^1.0.2",
+    "@progress/kendo-data-query": "^1.5.2",
+    "@progress/kendo-datasource-vue-wrapper": "^2019.1.220",
+    "@progress/kendo-grid-vue-wrapper": "^2020.1.115",
+    "@progress/kendo-theme-default": "^4.12.1",
+    "@progress/kendo-ui": "^2020.1.115",
+    "@progress/kendo-vue-animation": "^0.4.4",
+    "@progress/kendo-vue-grid": "^0.4.4",
+    "@progress/kendo-vue-intl": "^0.4.4",
+    "@progress/kendo-vue-popup": "^0.4.4",
+    "element-ui": "^2.13.0",
+    "vue-class-component": "^7.2.2",
+    "vue-router": "^3.1.5",
+    "vuex": "^3.1.2"
   }
 }

@@ -13,6 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
+Route::get('/user', function (Request $request) { return session()->all(); });
+
+Route::resource('soalmbti', 'Api\MbtiController')->only(['index', 'store','destroy','edit','update']);
+Route::resource('dimensi', 'Api\DimensiController')->only(['index', 'store','destroy','edit','update']);
+Route::resource('mapingdimensi', 'Api\DimensiMapingController')->only(['index','store','destroy','edit']);
