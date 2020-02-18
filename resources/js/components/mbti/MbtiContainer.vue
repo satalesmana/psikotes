@@ -108,6 +108,18 @@ export default {
       onClikItemPage(mode){
         switch (mode) {
           case 'addNew':
+            this.soal.id= ""
+            this.soal.groupdimensi= ""
+            this.soal.dimensiA = ""
+            this.soal.dimensiACode= ""
+            this.soal.dimensiAdesc = ""
+            this.soal.pernyataanA= ""
+            this.soal.dimensiB=""
+            this.soal.dimensiBCode=""	
+            this.soal.dimensiBdesc= ""
+            this.soal.pernyataanB=""
+
+            this.componentData = this.soal
             this.BodyComponent=FormSoalMbti
             break;
 
