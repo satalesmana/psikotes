@@ -72,7 +72,7 @@ export default {
             this.$parent.onClikItemPage('DimensiMaping');
         },
         onSave(){
-            Axios.post(APP_PATH+"/api/mapingdimensi/",this.maping)
+            Axios.post(APP_PATH+"/api/mapingdimensi",this.maping)
                 .then(res=>{
                     this.onClerForm();
                     this.$message({type: 'success', message: res.data.msg }); 
