@@ -15,11 +15,11 @@ class CreateMbtiSoal extends Migration
     {
         Schema::create('mbti_soal', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('grouping',255)->nullable();
+            $table->string('groupdimensi',255)->nullable();
             $table->string('pernyataanA',255)->nullable();
-            $table->string('dimensiA',1)->nullable();
+            $table->string('dimensiA',10)->nullable();
             $table->string('pernyataanB',255)->nullable();
-            $table->string('dimensiB',1)->nullable();
+            $table->string('dimensiB',10)->nullable();
             $table->timestamps();
         });
     }
